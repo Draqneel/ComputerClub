@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SignInController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="1000.0">
+            <children>
+            <TextField fx:id="loginField" layoutX="234.0" layoutY="166.0" prefHeight="57.0" prefWidth="532.0" promptText="Логин" />
+                <PasswordField fx:id="passwordField" layoutX="234.0" layoutY="253.0" prefHeight="57.0" prefWidth="532.0" promptText="Пароль" />
+
+                <Button id="authButton" layoutX="644.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnSignIn" prefHeight="57.0" prefWidth="122.0" text="Войти" />
+            <Button id="regButton" layoutX="234.0" layoutY="369.0" mnemonicParsing="false" onAction="#registrationBtnAction" prefHeight="57.0" prefWidth="122.0" text="Регистрация" />
+            <Text layoutX="274.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Компьютерный клуб" textAlignment="CENTER" wrappingWidth="451.6708984375">
+                <font>
+                    <Font size="48.0" />
+                </font>
+            </Text>
+            <Button id="helpButton" layoutX="906.0" layoutY="27.0" mnemonicParsing="false" onAction="#helpBtnAction" prefHeight="31.0" prefWidth="39.0" text="?" />
+            </children>
+        </AnchorPane>
+
+    </children>
+
+</GridPane>
